@@ -1,0 +1,71 @@
+body {
+    background-color: #F0F8FF;
+}
+
+h1 {
+    color: #000080;
+    text-align: center;
+    font-family: "Calibri";
+}
+
+form {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #000080;
+}
+
+h2 {
+    color: #000080;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table + table {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    background-color: #F0F8FF;
+    color: #000080;
+}
+
+input[type="submit"] {
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #000080;
+    color: #F0F8FF;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: Calibri;
+}
+
+button[name="clear"]{
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #000080;
+    color: #F0F8FF;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: Calibri;
+}
+

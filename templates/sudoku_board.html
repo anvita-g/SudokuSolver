@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku Solver</title>
+
+
+    <link rel="stylesheet" type="text/css" href=" {% static 'sudokuStyle.css' %}">
+
+
+</head>
+<body>
+    <h1>Sudoku Solver</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <table>
+            {% for row in board %}
+            <tr>
+                {% for cell in row %}
+                <td><input type="text" name="cell_{{ forloop.parentloop.counter }}_{{ forloop.counter }}" value="{{ cell|default:'' }}"></td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        <input type="submit" value="Solve">
+        <button type="submit" name="clear">Clear</button>
+    </form>
+
+    <!--
+{% if solution %}
+    <h2>Solution:</h2>
+    <table>
+        {% for row in solution %}
+        <tr>
+            {% for cell in row %}
+            <td>{{ cell }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+-->
+</body>
+</html>
